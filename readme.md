@@ -1,2 +1,3 @@
 # python学习笔记
-书籍：python编程从入门到实践第二版
+
+`basics`文件夹包含了python基础的学习
