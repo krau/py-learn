@@ -1,7 +1,5 @@
 #用户输入和while循环
 #用户输入，使用inpu()函数
-from turtle import Turtle
-
 
 name = input('请输入你的名字： ')
 print(f'hello {name}')

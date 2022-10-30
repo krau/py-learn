@@ -10,7 +10,6 @@
 '''
 import greet
 greet.hello('krau')
-
 '''
 Python读取这个文件时，代码行import greet让Python打开文件 greet.py，并将其中的所有函数都复制到这个程序中。
 你看不到复制的代码，因为在这个程序即将运行时，Python在幕后复制了这些代码。
