@@ -1,4 +1,4 @@
-#python文件操作
+#python文件操作与异常处理
 
 #读取文件
 '''
@@ -51,3 +51,33 @@ with open(write_file_name,'w') as file_obj5:
 '''
 with open(write_file_name,'a') as file_obj6:
     file_obj6.write('\nI just chasing my Dream')
+
+
+#使用try-except处理异常
+'''
+例如，print(1/0)让0作为分母，显然会报错，阻止程序运行。
+若想友好地处理这一异常，可以使用try-except语句
+'''
+try:
+    print(1/0)
+except:
+    print('零不能做分母')
+
+'''
+上面的代码可以描述为
+尝试执行print(1/0)，若不引发异常，则正常执行。
+若引发异常，则执行except后的语句
+
+当有些代码依赖于try后的代码才能正常运行时，可以添加else语句，如下
+'''
+#计算倒数
+try:
+    n = int(input('请输入一个不为0的整数：'))
+except:
+    print('请输入一个不为零的整数！')
+try:
+    answer = 1/n
+except:
+    print('请检查输入是否正确')
+else:
+    print(answer)
